@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo ,useState} from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";

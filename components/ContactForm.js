@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo ,useState} from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 import CallButton from "./misc/CallButton";
 import WhatsappButton from "./misc/WhatsappButton";
 const apiUrl = "https://api.800bbattery.com/";
+
 
 const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
