@@ -10,12 +10,12 @@ const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div
-      className="bg-white-500 max-w-screen-xl h-80  lg:h-0 px-4 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center"
+      className="bg-yellow-500 max-w-screen-xl h-80  lg:h-0 px-4 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center"
       id="contact"
     >
-      <ScrollAnimationWrapper className="relative w-full">
+      <ScrollAnimationWrapper className="relative w-full mt-6">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-          <div className="mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-white-500 max-w-4xl">
+          <div className="mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-yellow-500 max-w-4xl">
             <form className="space-y-4">
               {/* Name, Email, Phone Inputs - Stacked on mobile, side by side on larger screens */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -59,7 +59,7 @@ const ContactForm = () => {
                   className="w-full px-3 py-2  border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
                 >
                   <option value="" disabled selected>
-                    ---Select---
+                    ---Select Service---
                   </option>
                   <option value="Onsite Mobile Car Inspection">
                     Onsite Mobile Car Inspection

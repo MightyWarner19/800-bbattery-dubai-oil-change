@@ -5,7 +5,7 @@ const AboutUS = () => {
     <div className="bg-yellow-200 text-white py-16 " id='about'>
       <div className="container mx-auto text-center px-4">
         {/* Section Title */}
-        <div className="flex flex-col items-center aboutTitle">
+        <div className="flex flex-col items-center aboutTitle mt-6">
           <div className="flex items-center mb-4 pt-6">
             <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
             <h2 className="text-yellow-500 font-semibold text-xl  uppercase ">

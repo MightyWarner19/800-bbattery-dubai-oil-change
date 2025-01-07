@@ -3,7 +3,7 @@ import React from "react";
 const Faqs = () => {
   return (
     <div className=" py-12 bg-white-200 ">
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-16  grid  gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16  grid  gap-8 items-center">
         <div className="space-y-8">
           <div>
             <div className="flex flex-col items-center">
@@ -24,11 +24,11 @@ const Faqs = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6">
-          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+        <div className="grid grid-cols-2 gap-6">
+          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300 text-sm md:text-base leading-relaxed">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7  md:text-base leading-relaxed">
               1. What is included in the AED 149/- service charge?
-              <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
+              <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible text-sm md:text-base leading-relaxed">
                 <svg
                   class="h-5 w-4 text-pink-700"
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
-              <p>
+            <p class="text-sm md:text-base leading-relaxed pt-3">
+              <p classname="text-sm md:text-base leading-relaxed">
                 <span>The service charge of AED 149/- covers a </span>
                 <strong>car</strong>
                 <span> </span>
@@ -64,7 +64,7 @@ const Faqs = () => {
             </p>
           </details>
           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7">
               2. How do I know which oil brand to choose?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -84,7 +84,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+            <p class="text-sm md:text-base leading-relaxed pt-3">
               <p>
                 <strong>Our experts will guide</strong>
                 <span>
@@ -100,7 +100,7 @@ const Faqs = () => {
           </details>
 
           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+            <summary class="list-none font-semibold relative text-lg cursor-pointer pr-7">
               3. At what km should I change my oil?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -120,7 +120,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+             <p class="text-sm md:text-base leading-relaxed pt-3">
               Most vehicles require a car oil change every 5,000 to 7,500
               kilometers. However, this can vary based on oil quality, car
               model, and usage. Timely oil change services prevent engine wear
@@ -129,8 +129,8 @@ const Faqs = () => {
             </p>
           </details>
 
-          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7">
               4. Is changing my car oil an expensive process?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -150,7 +150,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+             <p class="text-sm md:text-base leading-relaxed pt-3">
               Timely car oil change and service is essential to protect your
               engine. That is why we provide affordable car oil changes using
               40+ premium brands, promising quality service without breaking the
@@ -159,8 +159,8 @@ const Faqs = () => {
             </p>
           </details>
 
-          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7">
               5. How long does oil last in a car usually?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -180,7 +180,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+             <p class="text-sm md:text-base leading-relaxed pt-3">
               Car oil typically lasts 5,000 to 10,000 kilometers, depending on
               the oil type, car model, and your driving habits. Our oil change
               services at regular intervals ensure optimal engine performance
@@ -188,8 +188,8 @@ const Faqs = () => {
               according to your vehicle's needs.
             </p>
           </details>
-          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7">
               6. Is it bad to switch oil brands between oil changes?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -209,7 +209,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+             <p class="text-sm md:text-base leading-relaxed pt-3">
               <p>
                 <span>
                   Switching oil brands is not a problem as long as the oil is of
@@ -224,8 +224,8 @@ const Faqs = () => {
               </p>
             </p>
           </details>
-          <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-            <summary class="list-none font-semibold relative text-sm cursor-pointer pr-7">
+           <details class="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+            <summary class="list-none font-semibold relative text-md cursor-pointer pr-7">
               7. Is there any available service for car oil change near me?
               <div class="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
@@ -245,7 +245,7 @@ const Faqs = () => {
                 </svg>
               </div>
             </summary>
-            <p class="text-xs pt-3">
+             <p class="text-sm md:text-base leading-relaxed pt-3">
               Yes, 800 B Battery provides on-site car oil change services across
               Dubai. Whether you're at home, work, or another location, our
               expert team ensures convenient and professional service wherever

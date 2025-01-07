@@ -15,7 +15,7 @@ import WhatsappButton from "./misc/WhatsappButton";
 const Services = () => {
   return (
     <>
-    <div className=" py-12 bg-white-200 ">
+    <div className="pb-12  bg-white-200 ">
     <div class="bg-gradient-to-b from-white-300 to-white-500 w-full lg:py-14 py-6" id="testimonial">
       <div class="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div class="flex flex-col w-full mt-16" id="testimoni"><div>
@@ -47,7 +47,7 @@ const Services = () => {
                       quality={100}
                       height={60}
                       width={108}
-                      className="h-44"
+                     className="h-auto w-full "
                     />
         <div class="p-6">
           <h2 class="font-bold mb-2 text-2xl text-purple-800">Onsite Mobile Car Inspection
@@ -55,7 +55,7 @@ const Services = () => {
           <p class="text-purple-700 mb-2">
           Planning a road trip, buying a used car, or ensuring safety? Our Onsite Mobile Car Inspection by 800 B Battery offers professional same day service of evaluations at your location, saving you time and effort.
           </p>
-          <a href="https://www.800bbattery.com/service/onsite-mobile-car-inspection" class="text-purple-600 hover:text-purple-500 underline text-sm flex"><span>Read More &nbsp; <MoveRight /> </span></a>
+          <a href="https://www.800bbattery.com/service/onsite-mobile-car-service" class="text-purple-600 hover:text-yellow-500 flex flex-row underline underline-offset-4 ">Read More &nbsp;<MoveRight className="text-yellow-500" /></a>
         </div>
 
       </div>
@@ -67,13 +67,13 @@ const Services = () => {
                       quality={100}
                       height={60}
                       width={108}
-                      className="h-44"
+                      className="h-auto w-full "
                     />
         <div class="p-6">
           <h2 class="font-bold mb-2 text-2xl text-purple-800">Onsite Mobile Car Service
           </h2>
           <p class="text-purple-700 mb-2">Avoid the hassle of waiting at shops or arranging rides with our same day services. With 800 B Battery’s Onsite Mobile Car Services, including car oil changes, expert car care comes to you—at home, work, or anywhere convenient. </p>
-          <a href="https://www.800bbattery.com/service/onsite-mobile-car-service" class="text-purple-600 hover:text-purple-500 underline text-sm flex">Read More &nbsp;<MoveRight /></a>
+          <a href="https://www.800bbattery.com/service/onsite-mobile-car-service" class="text-purple-600 hover:text-yellow-500 flex flex-row underline underline-offset-4 ">Read More &nbsp;<MoveRight className="text-yellow-500" /></a>
         </div>
 
       </div>
