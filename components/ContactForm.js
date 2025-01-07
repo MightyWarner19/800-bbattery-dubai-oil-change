@@ -16,14 +16,42 @@ const ContactForm = () => {
     services: "",
     form_message: "",
   });
+  const [errorMessages, setErrorMessages] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+
+    setErrorMessages((prevMessages) => ({
+      ...prevMessages,
+      [name]: "",
+    }));
   };
+
+  const validateForm = () => {
+    const errors = {};
+    if (!formData.ffname) errors.ffname = "Name is required.";
+    if (!formData.email) errors.email = "Email is required.";
+    if (!formData.phone) errors.phone = "Phone number is required.";
+    if (!formData.services) errors.services = "Service selection is required.";
+    if (!formData.form_message) errors.form_message = "Message is required.";
+
+    return errors;
+  };
+
   const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrorMessages(validationErrors);
+      return;
+    }
+
     const payload = {
       name: formData.ffname,
       email: formData.email,
@@ -31,7 +59,7 @@ const ContactForm = () => {
       service: formData.services,
       message: formData.form_message,
     };
-    e.preventDefault();
+
     try {
       const res = await fetch(`${apiUrl}/api/oilForm/create/oil-form`, {
         method: "POST",
@@ -41,8 +69,26 @@ const ContactForm = () => {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
+
+      if (res.ok) {
+        setSuccessMessage("Your message has been sent successfully!");
+       
+        setFormData({
+          ffname: "",
+          email: "",
+          phone: "",
+          services: "",
+          form_message: "",
+        });
+       
+        setTimeout(() => setSuccessMessage(""), 5000);
+      } else {
+      
+        setErrorMessages({ form: "There was an error submitting your form." });
+      }
     } catch (error) {
       console.error(error);
+      setErrorMessages({ form: "An error occurred. Please try again later." });
     }
   };
 
@@ -55,7 +101,14 @@ const ContactForm = () => {
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div className="mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-yellow-500 max-w-4xl">
             <form className="space-y-4">
-              {/* Name, Email, Phone Inputs - Stacked on mobile, side by side on larger screens */}
+             
+              {errorMessages.form && (
+                <div className="text-red-500 text-sm mb-4">
+                  {errorMessages.form}
+                </div>
+              )}
+
+             
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
                   <input
@@ -67,6 +120,11 @@ const ContactForm = () => {
                     className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
                     placeholder="John Doe"
                   />
+                  {errorMessages.ffname && (
+                    <div className="text-red-500 text-sm">
+                      {errorMessages.ffname}
+                    </div>
+                  )}
                 </div>
                 <div>
                   <input
@@ -78,6 +136,11 @@ const ContactForm = () => {
                     className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
                     placeholder="johndoe@example.com"
                   />
+                  {errorMessages.email && (
+                    <div className="text-red-500 text-sm">
+                      {errorMessages.email}
+                    </div>
+                  )}
                 </div>
                 <div>
                   <input
@@ -89,47 +152,62 @@ const ContactForm = () => {
                     className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
                     placeholder="+1234567890"
                   />
+                  {errorMessages.phone && (
+                    <div className="text-red-500 text-sm">
+                      {errorMessages.phone}
+                    </div>
+                  )}
                 </div>
               </div>
 
-              {/* Textarea */}
+              {/* Service and Message Inputs */}
               <div className="grid lg:grid-cols-3 gap-6">
-                {/* Select Field */}
+                <div>
+                  <select
+                    value={formData.services}
+                    onChange={handleChange}
+                    id="services"
+                    name="services"
+                    className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
+                  >
+                    <option value="" disabled>
+                      --- Select Service ---
+                    </option>
+                    <option value="Onsite Mobile Car Inspection">
+                      Onsite Mobile Car Inspection
+                    </option>
+                    <option value="Onsite Mobile Car Service">
+                      Onsite Mobile Car Service
+                    </option>
+                  </select>
+                  {errorMessages.services && (
+                    <div className="text-red-500 text-sm">
+                      {errorMessages.services}
+                    </div>
+                  )}
+                </div>
 
-                <select
-                  value={formData.services} // Controlled component binding
-                  onChange={handleChange}
-                  id="services" // Updated `id` to match the form element purpose
-                  name="services"
-                  autoComplete="off" // `autoComplete` is not relevant for select inputs
-                  className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
-                >
-                  <option value="" disabled>
-                    --- Select Service ---
-                  </option>
-                  <option value="Onsite Mobile Car Inspection">
-                    Onsite Mobile Car Inspection
-                  </option>
-                  <option value="Onsite Mobile Car Service">
-                    Onsite Mobile Car Service
-                  </option>
-                </select>
+                <div>
+                  <textarea
+                    value={formData.form_message}
+                    onChange={handleChange}
+                    id="about"
+                    name="form_message"
+                    rows={1}
+                    className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
+                    placeholder="Tell us more about your needs"
+                  />
+                  {errorMessages.form_message && (
+                    <div className="text-red-500 text-sm">
+                      {errorMessages.form_message}
+                    </div>
+                  )}
+                </div>
 
-                <textarea
-                  value={formData.form_message}
-                  onChange={handleChange}
-                  id="about"
-                  name="form_message"
-                  rows={1}
-                  className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
-                  placeholder="Tell us more about your needs"
-                />
                 <div className="flex justify-center items-center">
                   <button
                     type="submit"
-                    className={
-                      "fixHeight w-full py-3 lg:py-3 px-4  lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
-                    }
+                    className="fixHeight w-full py-3 lg:py-3 px-4  lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none"
                     onClick={handleSubmit}
                   >
                     Submit
@@ -137,6 +215,13 @@ const ContactForm = () => {
                 </div>
               </div>
             </form>
+
+           
+            {successMessage && (
+              <div className="text-green-500 text-lg font-bold mt-4 p-2 bg-white-500">
+                {successMessage}
+              </div>
+            )}
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
