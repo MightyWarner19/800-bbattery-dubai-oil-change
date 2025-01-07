@@ -47,7 +47,7 @@ const Services = () => {
                       quality={100}
                       height={60}
                       width={108}
-                     className="h-auto w-full "
+                     className="h-auto w-full object-cover"
                     />
         <div class="p-6">
           <h2 class="font-bold mb-2 text-2xl text-purple-800">Onsite Mobile Car Inspection
@@ -67,7 +67,7 @@ const Services = () => {
                       quality={100}
                       height={60}
                       width={108}
-                      className="h-auto w-full "
+                      className="h-auto w-full object-cover"
                     />
         <div class="p-6">
           <h2 class="font-bold mb-2 text-2xl text-purple-800">Onsite Mobile Car Service
