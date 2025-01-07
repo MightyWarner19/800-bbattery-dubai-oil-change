@@ -49,7 +49,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16  grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div class="bg-white rounded-sm shadow-lg">
             <Image
-              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/4d7df151-466f-4c2d-3761-0d87df493600/public"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/cba2c377-860a-423b-fcd4-062e38fda300/1"
               alt="Onsite Mobile Car Inspection"
               layout="responsive"
               quality={100}
@@ -78,7 +78,7 @@ const Services = () => {
           </div>
           <div class="bg-white rounded-sm shadow-lg">
             <Image
-              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/08b4edca-954d-4bbc-65dc-ce2368eab700/public"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/cba2c377-860a-423b-fcd4-062e38fda300/1"
               alt="Onsite Mobile Car Service"
               layout="responsive"
               quality={100}

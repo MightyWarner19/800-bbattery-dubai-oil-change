@@ -139,7 +139,7 @@ const Hero = () => {
               variants={scrollAnimation}
             >
               <Image
-                src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/b1d68e43-51fb-4a2f-e0d4-432f54e10f00/public"
+                src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/f1194261-ba4b-4682-d4a9-c114364e8a00/1"
                 alt="car battery replacement service"
                 quality={100}
                 width={612}

@@ -54,7 +54,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'heroBanner': "url('https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/5491b5da-4ad7-4240-452a-5b2c94767400/public')",
+        'heroBanner': "url('https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/1c978a1c-ed5b-49c7-6f31-43bf5713ef00/1')",
       }
       
     },

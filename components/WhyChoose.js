@@ -94,7 +94,7 @@ export default function SecurityLanding() {
         <div className="relative">
           <div className="relative aspect-[4/3] w-full">
             <Image
-              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/08b4edca-954d-4bbc-65dc-ce2368eab700/public"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/4fa5a366-551e-4454-9140-af5e2ff65d00/1"
               alt="car battery replacement"
               layout="responsive"
               quality={100}

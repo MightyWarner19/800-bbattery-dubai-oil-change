@@ -91,54 +91,82 @@ const BatterySection = () => {
             <Slider {...sliderSettings}>
               <div className="flex justify-center items-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a5783e87-5537-45ae-f95e-b965c14bc100/public"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/b5e49e79-ad4c-49f6-18ac-fdd69883c100/1"
                   className="lg:h-14 h-10  w-auto"
-                  alt="AC Delco car battery replacement"
+                  alt="800 BBattery"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/e96e3c95-f02e-41b2-ca86-0fa065debc00/public"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/5b8175c6-abbb-461b-92b8-f0e2348c0700/1"
                   className="lg:h-14 h-10  w-auto"
-                  alt="Amaron auto battery replacement"
+                  alt="800 BBattery"
                 />
               </div>
              
              
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/11caa283-465a-4cee-f51b-db33880d0900/public"
-                  className="h-12 w-auto"
-                  alt="Bosch automobile battery replacement"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/b9d9edb0-e680-4e15-00ea-73865a617300/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/b316e92a-36fc-4f11-0564-776c5f324a00/public"
-                  className="h-12 w-auto"
-                  alt="fiamm auto battery service"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/5168642b-171f-4bf8-e204-e66edbf28200/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/90dbea1a-0e4c-4846-545c-43c9c871e000/public"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/806c9a47-2397-47fc-a614-32a3cb99c200/1"
                   className="lg:h-14 h-10  w-auto"
-                  alt="Energizer car battery change"
+                  alt="800 BBattery"
                 />
               </div>
               
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/fc75441e-a0c8-453b-4b1b-e95df3ac2d00/public"
-                  className="h-12 w-auto"
-                  alt="varta car battery services"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/9c105945-7ad9-4eae-17b0-3f8ccf23c200/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/d0839ccd-f84d-4b49-64a2-38ddcc534b00/public"
-                  className="h-12 w-auto"
-                  alt="excide auto battery service near me"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/d11bf004-0adf-45af-a783-4528d36ae800/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
+                />
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/08ad8ea7-c3b9-4b00-e3aa-491be1cd7f00/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
+                />
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/3c328a1e-c8ba-4b8e-1b88-027ffa3cdd00/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
+                />
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/d52f8a0c-cd4f-454a-f97b-fb7d64d7b600/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
+                />
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/52191cd6-15bd-457f-11d1-2fa0629de100/1"
+                  className="h-14 w-auto"
+                  alt="800 BBattery"
                 />
               </div>
             </Slider>
