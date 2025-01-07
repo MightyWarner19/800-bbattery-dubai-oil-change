@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-const apiUrl = "https://api.800bbattery.com/";
+const apiUrl = "https://api.800bbattery.com";
 
 const Emergency = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -31,13 +31,14 @@ const Emergency = () => {
       service: formData.services,
       message: formData.form_message,
     };
+    console.log(payload);
     try {
       const res = await fetch(`${apiUrl}/api/oilForm/create/oil-form`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: payload,
+        body: JSON.stringify(payload),
       });
       const data = await res.json();
       console.log("Here is response data", data);
@@ -143,7 +144,7 @@ const Emergency = () => {
                       className={
                         "fixHeight w-full py-3 lg:py-3 px-4  lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
                       }
-                      onSubmit={handleSubmit}
+                      onClick={handleSubmit}
                     >
                       Submit
                     </button>

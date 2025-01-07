@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import CallButton from "./misc/CallButton";
 import WhatsappButton from "./misc/WhatsappButton";
-const apiUrl = "https://api.800bbattery.com/";
+const apiUrl = "https://api.800bbattery.com";
 
 const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -23,7 +23,6 @@ const ContactForm = () => {
       [name]: value,
     }));
   };
-  console.log(formData);
   const handleSubmit = async (e) => {
     const payload = {
       name: formData.ffname,
@@ -39,7 +38,7 @@ const ContactForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: payload,
+        body: JSON.stringify(payload),
       });
       const data = await res.json();
     } catch (error) {
@@ -131,7 +130,7 @@ const ContactForm = () => {
                     className={
                       "fixHeight w-full py-3 lg:py-3 px-4  lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
                     }
-                    onSubmit={handleSubmit}
+                    onClick={handleSubmit}
                   >
                     Submit
                   </button>
