@@ -36,7 +36,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -74,7 +74,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -110,7 +110,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -124,8 +124,7 @@ const Faqs = () => {
               Most vehicles require a car oil change every 5,000 to 7,500
               kilometers. However, this can vary based on oil quality, car
               model, and usage. Timely oil change services prevent engine wear
-              and maintain smooth functioning. Contact our experts at 800 B
-              Battery if you think it is almost time to get your oil changed.
+              and maintain smooth functioning. Contact our experts at 800 Bbattery if you think it is almost time to get your oil changed.
             </p>
           </details>
 
@@ -140,7 +139,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -170,7 +169,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -184,7 +183,7 @@ const Faqs = () => {
               Car oil typically lasts 5,000 to 10,000 kilometers, depending on
               the oil type, car model, and your driving habits. Our oil change
               services at regular intervals ensure optimal engine performance
-              and longevity. 800 B Battery’s professional team provides guidance
+              and longevity. 800 Bbattery’s professional team provides guidance
               according to your vehicle's needs.
             </p>
           </details>
@@ -193,13 +192,13 @@ const Faqs = () => {
               6. Is it bad to switch oil brands between oil changes?
               <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                 <svg
-                  className="h-5 w-4 text-pink-700"
+                  className=" text-pink-700 w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -214,7 +213,7 @@ const Faqs = () => {
                 <span>
                   Switching oil brands is not a problem as long as the oil is of
                   good quality and meets the specifications your vehicle
-                  demands. At 800 B Battery, we have{" "}
+                  demands. At 800 Bbattery, we have{" "}
                 </span>
                 <strong>over 40 premium oil brands </strong>
                 <span>
@@ -235,7 +234,7 @@ const Faqs = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                 
                 >
                   <path
                     strokeLinecap="round"
@@ -246,7 +245,7 @@ const Faqs = () => {
               </div>
             </summary>
              <p className="text-sm md:text-base leading-relaxed pt-3">
-              Yes, 800 B Battery provides on-site car oil change services across
+              Yes, 800 Bbattery provides on-site car oil change services across
               Dubai. Whether you're at home, work, or another location, our
               expert team ensures convenient and professional service wherever
               you are.

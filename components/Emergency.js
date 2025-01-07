@@ -2,10 +2,12 @@ import React, { useMemo, useState } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const apiUrl = "https://api.800bbattery.com";
 
 const Emergency = () => {
+  const router = useRouter();
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   const [formData, setFormData] = useState({
@@ -34,6 +36,7 @@ const Emergency = () => {
 
   // Form validation
   const validateForm = () => {
+      
     const errors = {};
     if (!formData.ffname) errors.ffname = "Name is required.";
     if (!formData.email) errors.email = "Email is required.";
@@ -83,6 +86,10 @@ const Emergency = () => {
           form_message: "",
         });
 
+        sessionStorage.setItem('formSubmitted', 'true');
+ 
+        router.push('/thank-you');
+
         setTimeout(() => setSuccessMessage(""), 5000);
       } else {
         setErrorMessages({
@@ -119,7 +126,7 @@ const Emergency = () => {
               {/* Form */}
               <form className="space-y-4">
                 {errorMessages.form && (
-                  <div className="text-red-500 text-sm mb-4">
+                  <div className="text-red-500 text-sm text-start mt-1 mb-4">
                     {errorMessages.form}
                   </div>
                 )}
@@ -136,7 +143,7 @@ const Emergency = () => {
                       placeholder="John Doe"
                     />
                     {errorMessages.ffname && (
-                      <div className="text-red-500 text-sm">
+                      <div className="text-red-500 text-sm text-start mt-1">
                         {errorMessages.ffname}
                       </div>
                     )}
@@ -153,7 +160,7 @@ const Emergency = () => {
                       placeholder="johndoe@example.com"
                     />
                     {errorMessages.email && (
-                      <div className="text-red-500 text-sm">
+                      <div className="text-red-500 text-sm text-start mt-1">
                         {errorMessages.email}
                       </div>
                     )}
@@ -170,7 +177,7 @@ const Emergency = () => {
                       placeholder="+1234567890"
                     />
                     {errorMessages.phone && (
-                      <div className="text-red-500 text-sm">
+                      <div className="text-red-500 text-sm text-start mt-1">
                         {errorMessages.phone}
                       </div>
                     )}
@@ -195,7 +202,7 @@ const Emergency = () => {
                       </option>
                     </select>
                     {errorMessages.services && (
-                      <div className="text-red-500 text-sm">
+                      <div className="text-red-500 text-sm text-start mt-1">
                         {errorMessages.services}
                       </div>
                     )}
@@ -213,7 +220,7 @@ const Emergency = () => {
                     placeholder="Tell us more about your needs"
                   />
                   {errorMessages.form_message && (
-                    <div className="text-red-500 text-sm">
+                    <div className="text-red-500 text-sm text-start mt-1 ">
                       {errorMessages.form_message}
                     </div>
                   )}

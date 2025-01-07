@@ -3,15 +3,15 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: '24x7 Car Battery Replacement | 800 BBattery',
-  siteName: '800 BBattery',
+  title: '24x7 Car Battery Replacement | 800 Bbattery',
+  siteName: '800 Bbattery',
   description:
-    'Get 24x7 car battery replacement services from 800 BBattery. Quick, reliable, and professional assistance whenever you need it. Contact us today!',
+    'Get 24x7 car battery replacement services from 800 Bbattery. Quick, reliable, and professional assistance whenever you need it. Contact us today!',
   url: 'https://www.800bbattery.com/best-car-battery-services-in-dubai',
   type: 'website',
   robots: 'follow, index',
   image: 'https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a8df3196-6c39-4799-0072-92dbd37c6700/public',
-  author: '800 BBattery'
+  author: '800 Bbattery'
 };
 
 // Add GTM script to the head section

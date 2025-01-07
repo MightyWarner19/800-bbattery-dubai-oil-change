@@ -45,7 +45,7 @@ const Feature = () => {
           <div className="flex items-center mb-4">
             <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
             <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
-            Why Choose 800B Battery
+            Why Choose 800 Bbattery
             </h2>
             <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
            

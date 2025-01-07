@@ -126,7 +126,7 @@ const Footer = () => {
        
       </div>
       <p className="text-gray-400 mt-4 max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16">
-          Copyright ©{new Date().getFullYear()} -by 800 BBattery. All rights reserved. Developed by <span className="text-yellow-500"><a
+          Copyright ©{new Date().getFullYear()} -by 800 Bbattery. All rights reserved. Developed by <span className="text-yellow-500"><a
               href="https://www.mightywarner.ae/"
                rel="noopener noreferrer"
               target="_blank">Mighty Warners </a></span>

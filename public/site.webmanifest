@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "800 BBattery",
-  "short_name": "800 BBattery",
+  "name": "800 Bbattery",
+  "short_name": "800 Bbattery",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#f2871c",
-  "description": "800 BBattery.",
+  "description": "800 Bbattery.",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",

@@ -19,7 +19,7 @@ import AboutUS from "../components/AboutUS";
 export default function Home() {
   return (
     <>
-      <SeoHead title='24x7 Car Battery Replacement | 800 BBattery' />
+      <SeoHead title='24x7 Car Battery Replacement | 800 Bbattery' />
       <Layout>
         <Hero />
         <ContactForm />

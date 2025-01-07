@@ -20,7 +20,7 @@ const AboutUS = () => {
 
         {/* Description */}
         <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-        At 800 B Battery, we specialize in delivering efficient oil change services at home, ensuring a hassle-free experience for our valuable customers. Using trusted oil brands, we guarantee smooth performance for your vehicle, always. Additionally, we offer car mobile inspections and exclusive deals on various services, prioritizing convenience and quality for our customers. Experience seamless car care with our reliable and professional services, at the auto oil shop near you. 
+        At 800 Bbattery, we specialize in delivering efficient oil change services at home, ensuring a hassle-free experience for our valuable customers. Using trusted oil brands, we guarantee smooth performance for your vehicle, always. Additionally, we offer car mobile inspections and exclusive deals on various services, prioritizing convenience and quality for our customers. Experience seamless car care with our reliable and professional services, at the auto oil shop near you. 
         </p>
       </div>
       

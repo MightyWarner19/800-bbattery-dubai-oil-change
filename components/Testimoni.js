@@ -14,7 +14,7 @@ const Testimoni = ({
       country: "UAE",
       rating: "4.9",
       testimoni:
-        "Absolutely hassle-free service offered by 800 B Battery! First, I was looking for an oil change near me, but they are providing on-site service. The team arrived on time, used premium oil, and completed the service efficiently. It saved me so much time and effort. Five stars.",
+        "Absolutely hassle-free service offered by 800 Bbattery! First, I was looking for an oil change near me, but they are providing on-site service. The team arrived on time, used premium oil, and completed the service efficiently. It saved me so much time and effort. Five stars.",
     },
     {
       name: "Zaid Al Salem",
@@ -32,7 +32,7 @@ const Testimoni = ({
       country: "UAE",
       rating: "4.5",
       testimoni:
-        "While looking for oil change services near me on Google, I came across 800 B Battery and saw that they give their services at your location. I booked them immediately, and the skilled and friendly team arrived quickly and finished their work in no time at all! Highly recommended.",
+        "While looking for oil change services near me on Google, I came across 800 Bbattery and saw that they give their services at your location. I booked them immediately, and the skilled and friendly team arrived quickly and finished their work in no time at all! Highly recommended.",
     },
     {
       name: "Reem Al Zaabi",

@@ -3,6 +3,7 @@ import { Link as LinkScroll } from "react-scroll";
 import Call from "../../public/assets/Icon/phone.svg";
 import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -22,13 +23,15 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 bg-black-900 lg:px-16 mx-auto grid grid-flow-col py-2 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
+          <Link href="/">
             <Image
               src={`https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a8df3196-6c39-4799-0072-92dbd37c6700/public`}
               alt="automobile battery replacement"
               width={120}
               height={42}
-              className=""
+              className="cursor-pointer"
             />
+           </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll

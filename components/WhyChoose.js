@@ -27,7 +27,7 @@ export default function SecurityLanding() {
                 <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
               </div>
               <h3 className="text-black-900 font-semibold text-3xl mb-4">
-              Why Choose 800B Battery for Your Car Oil Change
+              Why Choose 800 Bbattery for Your Car Oil Change
 
               </h3>
             </div>

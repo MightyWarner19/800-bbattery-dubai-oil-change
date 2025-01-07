@@ -63,7 +63,7 @@ const Services = () => {
               </h2>
               <p class="text-purple-700 mb-2">
                 Planning a road trip, buying a used car, or ensuring safety? Our
-                Onsite Mobile Car Inspection by 800 B Battery offers
+                Onsite Mobile Car Inspection by 800 Bbattery offers
                 professional same day service of evaluations at your location,
                 saving you time and effort.
               </p>
@@ -92,7 +92,7 @@ const Services = () => {
               </h2>
               <p class="text-purple-700 mb-2">
                 Avoid the hassle of waiting at shops or arranging rides with our
-                same day services. With 800 B Battery’s Onsite Mobile Car
+                same day services. With 800 B attery’s Onsite Mobile Car
                 Services, including car oil changes, expert car care comes to
                 you—at home, work, or anywhere convenient.{" "}
               </p>
