@@ -104,24 +104,24 @@ const Emergency = () => {
                     />
                   </div>
                   <div>
-                    <select
-                    value={formData.services}
-                    onChange={handleChange}
-                      id="country"
-                      name="services"
-                      autoComplete="country-name"
-                      className="w-full px-3 py-2  border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
-                    >
-                      <option value="" disabled selected>
-                        ---Select Service---
-                      </option>
-                      <option value="Onsite Mobile Car Inspection">
-                        Onsite Mobile Car Inspection
-                      </option>
-                      <option value="Onsite Mobile Car Service">
-                        Onsite Mobile Car Service
-                      </option>
-                    </select>
+                  <select
+                        value={formData.services} // Controlled component binding
+                        onChange={handleChange}
+                        id="services" // Updated `id` to match the form element purpose
+                        name="services"
+                        autoComplete="off" // `autoComplete` is not relevant for select inputs
+                        className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
+                      >
+                        <option value="" disabled>
+                          --- Select Service ---
+                        </option>
+                        <option value="Onsite Mobile Car Inspection">
+                          Onsite Mobile Car Inspection
+                        </option>
+                        <option value="Onsite Mobile Car Service">
+                          Onsite Mobile Car Service
+                        </option>
+                      </select>
                   </div>
                 </div>
 
