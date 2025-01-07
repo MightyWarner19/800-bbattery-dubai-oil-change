@@ -4,7 +4,7 @@ import Instagram from "../../public/assets/Icon/instagram.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="bg-black-900 pt-44 pb-20">
+    <div className="bg-black-900 pt-44 footerWrapper pb-20">
       <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className=" ">
           <Image

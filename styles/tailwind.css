@@ -64,7 +64,9 @@ li.check:before {
 .fixHeight{
   height: 45px;
 }
-
+.footerWrapper {
+  padding-top: 25rem !important;
+}
  /* Default margin for smaller screens (mobile-first) */
  .custom-margin {
   margin-top: -800px;

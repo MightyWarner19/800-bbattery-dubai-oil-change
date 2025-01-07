@@ -16,6 +16,16 @@ const Emergency = () => {
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div className="absolute rounded-xl border-yellow-300 grid md:grid-cols-2 gap-10 bg-yellow-300 py-8 sm:py-10 px-2 sm:px-12 lg:px-16 w-full   z-10">
           <div className="mx-auto mt-4 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-white-500 max-w-4xl">
+          <div className="flex flex-col text-left  mb-6 sm:mb-0">
+              <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-semibold">
+              Reach Out To Us For Quick & Reliable Oil Change Services Near You
+              </h5>
+              <p className="mt-3">Get In Touch With Us Today To Avail Of Our Service And Learn More About Exclusive Deals Available.</p>
+              <div className="flex  gap-2 mt-6  ">
+              </div>
+
+              
+            </div>
             <form className="space-y-4">
               {/* Name, Email, Phone Inputs - Stacked on mobile, side by side on larger screens */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 lg:grid-cols-2">
