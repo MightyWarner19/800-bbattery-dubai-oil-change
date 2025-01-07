@@ -64,6 +64,27 @@ li.check:before {
 .fixHeight{
   height: 45px;
 }
+
+ /* Default margin for smaller screens (mobile-first) */
+ .custom-margin {
+  margin-top: -800px;
+}
+
+/* For tablet screens (768px and above) */
+@media (min-width: 768px) {
+  .custom-margin {
+    margin-top: -600px; /* Custom margin for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-margin {
+    margin-top: -500px; /* Custom margin for large screens */
+  }
+}
+
+/* For large screens (1024px and above) */
+
 /* purgecss end ignore */
 @tailwind utilities;
 /* purgecss start ignore */

@@ -56,7 +56,7 @@ const BatterySection = () => {
   };
 
   return (
-    <div className="max-w-screen-xl px-10 sm:px-8 lg:px-20 mx-auto flex flex-col w-full text-center justify-center items-center my-16" id="products">
+    <div className="max-w-screen-xl px-10 md:pb-20 pb-44 sm:px-8 lg:px-20 mx-auto flex flex-col w-full text-center justify-center items-center my-16" id="products">
          
         <ScrollAnimationWrapper>
            
