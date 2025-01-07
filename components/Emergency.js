@@ -1,10 +1,7 @@
-import React, { useMemo ,useState} from "react";
+import React, { useMemo, useState } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
-import CallButton from "./misc/CallButton";
-import WhatsappButton from "./misc/WhatsappButton";
-import { ChevronDown } from "lucide-react";
 const apiUrl = "https://api.800bbattery.com/";
 
 const Emergency = () => {
@@ -27,23 +24,25 @@ const Emergency = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const payload = {
+      name: formData.ffname,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.services,
+      message: formData.form_message,
+    };
     try {
       const res = await fetch(`${apiUrl}/api/oilForm/create/oil-form`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData}),
+        body: payload,
       });
       const data = await res.json();
-      console.log(data);
-      if (!res.ok) {
-        setPublishError(data.message);
-        return;
-      }
-      setPublishError("Thank you so much for contacting us");
+      console.log("Here is response data", data);
     } catch (error) {
-      setPublishError("Something went wrong");
+      console.error(error);
     }
   };
 
@@ -72,8 +71,8 @@ const Emergency = () => {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 lg:grid-cols-2">
                   <div>
                     <input
-                     value={formData.ffname}
-                     onChange={handleChange}
+                      value={formData.ffname}
+                      onChange={handleChange}
                       type="text"
                       id="name"
                       name="ffname"
@@ -94,8 +93,8 @@ const Emergency = () => {
                   </div>
                   <div>
                     <input
-                    value={formData.phone}
-                    onChange={handleChange}
+                      value={formData.phone}
+                      onChange={handleChange}
                       type="tel"
                       id="phone"
                       name="phone"
@@ -104,24 +103,24 @@ const Emergency = () => {
                     />
                   </div>
                   <div>
-                  <select
-                        value={formData.services} // Controlled component binding
-                        onChange={handleChange}
-                        id="services" // Updated `id` to match the form element purpose
-                        name="services"
-                        autoComplete="off" // `autoComplete` is not relevant for select inputs
-                        className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
-                      >
-                        <option value="" disabled>
-                          --- Select Service ---
-                        </option>
-                        <option value="Onsite Mobile Car Inspection">
-                          Onsite Mobile Car Inspection
-                        </option>
-                        <option value="Onsite Mobile Car Service">
-                          Onsite Mobile Car Service
-                        </option>
-                      </select>
+                    <select
+                      value={formData.services} // Controlled component binding
+                      onChange={handleChange}
+                      id="services" // Updated `id` to match the form element purpose
+                      name="services"
+                      autoComplete="off" // `autoComplete` is not relevant for select inputs
+                      className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
+                    >
+                      <option value="" disabled>
+                        --- Select Service ---
+                      </option>
+                      <option value="Onsite Mobile Car Inspection">
+                        Onsite Mobile Car Inspection
+                      </option>
+                      <option value="Onsite Mobile Car Service">
+                        Onsite Mobile Car Service
+                      </option>
+                    </select>
                   </div>
                 </div>
 

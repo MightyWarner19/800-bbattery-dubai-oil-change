@@ -1,4 +1,4 @@
-import React, { useMemo ,useState} from "react";
+import React, { useMemo, useState } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
@@ -6,7 +6,6 @@ import { ChevronDown } from "lucide-react";
 import CallButton from "./misc/CallButton";
 import WhatsappButton from "./misc/WhatsappButton";
 const apiUrl = "https://api.800bbattery.com/";
-
 
 const ContactForm = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -26,6 +25,13 @@ const ContactForm = () => {
   };
   console.log(formData);
   const handleSubmit = async (e) => {
+    const payload = {
+      name: formData.ffname,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.services,
+      message: formData.form_message,
+    };
     e.preventDefault();
     try {
       const res = await fetch(`${apiUrl}/api/oilForm/create/oil-form`, {
@@ -33,17 +39,11 @@ const ContactForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData}),
+        body: payload,
       });
       const data = await res.json();
-      console.log(data);
-      if (!res.ok) {
-        setPublishError(data.message);
-        return;
-      }
-      setPublishError("Thank you so much for contacting us");
     } catch (error) {
-      setPublishError("Something went wrong");
+      console.error(error);
     }
   };
 
@@ -55,9 +55,7 @@ const ContactForm = () => {
       <ScrollAnimationWrapper className="relative w-full mt-6">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div className="mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-yellow-500 max-w-4xl">
-            <form
-              className="space-y-4"
-            >
+            <form className="space-y-4">
               {/* Name, Email, Phone Inputs - Stacked on mobile, side by side on larger screens */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
@@ -100,23 +98,23 @@ const ContactForm = () => {
                 {/* Select Field */}
 
                 <select
-                      value={formData.services} // Controlled component binding
-                      onChange={handleChange}
-                      id="services" // Updated `id` to match the form element purpose
-                      name="services"
-                      autoComplete="off" // `autoComplete` is not relevant for select inputs
-                      className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
-                    >
-                      <option value="" disabled>
-                        --- Select Service ---
-                      </option>
-                      <option value="Onsite Mobile Car Inspection">
-                        Onsite Mobile Car Inspection
-                      </option>
-                      <option value="Onsite Mobile Car Service">
-                        Onsite Mobile Car Service
-                      </option>
-                    </select>
+                  value={formData.services} // Controlled component binding
+                  onChange={handleChange}
+                  id="services" // Updated `id` to match the form element purpose
+                  name="services"
+                  autoComplete="off" // `autoComplete` is not relevant for select inputs
+                  className="w-full px-3 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300"
+                >
+                  <option value="" disabled>
+                    --- Select Service ---
+                  </option>
+                  <option value="Onsite Mobile Car Inspection">
+                    Onsite Mobile Car Inspection
+                  </option>
+                  <option value="Onsite Mobile Car Service">
+                    Onsite Mobile Car Service
+                  </option>
+                </select>
 
                 <textarea
                   value={formData.form_message}
