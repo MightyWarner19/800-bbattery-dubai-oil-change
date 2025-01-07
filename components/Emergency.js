@@ -33,7 +33,7 @@ const Emergency = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData, sourcePage: currentPath }),
+        body: JSON.stringify({ ...formData}),
       });
       const data = await res.json();
       console.log(data);
