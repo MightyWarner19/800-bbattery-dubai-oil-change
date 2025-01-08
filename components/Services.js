@@ -49,7 +49,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16  grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div className="bg-white rounded-sm shadow-lg">
             <Image
-              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/cba2c377-860a-423b-fcd4-062e38fda300/1"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/44eb458c-5784-4292-30cb-372a23879600/1"
               alt="Onsite Mobile Car Inspection"
               layout="responsive"
               quality={100}
