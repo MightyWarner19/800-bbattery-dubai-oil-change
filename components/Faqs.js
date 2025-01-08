@@ -24,7 +24,7 @@ const Faqs = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <details className="border border-gray-400 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300 text-sm md:text-base leading-relaxed">
             <summary className="list-none font-semibold relative text-md cursor-pointer pr-7  md:text-base leading-relaxed">
               1. What is included in the AED 149/- service charge?

@@ -50,7 +50,8 @@ const Feature = () => {
             <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
            
           </div>
-          <h3 className="text-black-900 font-semibold text-3xl mb-4">Premium Car Oil Changes! Book Now To Get Your Oil Changed Today.
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Affordable Premium Oil Change                                   
+        Book Today, Get It Done Today!
           </h3>
         </div>
             
@@ -75,8 +76,8 @@ const Feature = () => {
             </ul>
             <div className="flex justify-start items-center gap-2">
               
-            <CallButton name="Call Now!"/>
-            <WhatsappButton name="Talk to Expert!"/>
+            <CallButton name="Fast Oil Change? Call Now"/>
+            <WhatsappButton name="Get Expert Advice Now"/>
             </div>
           </motion.div>
         </ScrollAnimationWrapper>

@@ -42,7 +42,7 @@ const Emergency = () => {
     if (!formData.email) errors.email = "Email is required.";
     if (!formData.phone) errors.phone = "Phone number is required.";
     if (!formData.services) errors.services = "Please select a service.";
-    if (!formData.form_message) errors.form_message = "Message is required.";
+    // if (!formData.form_message) errors.form_message = "Message is required.";
     return errors;
   };
 
@@ -113,12 +113,10 @@ const Emergency = () => {
             <div className="mx-auto mt-4 p-6 bg-white rounded-lg shadow-lg border border-gray-400 bg-white-500 max-w-4xl">
               <div className="flex flex-col text-left mb-6 sm:mb-0">
                 <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-semibold">
-                  Reach Out To Us For Quick & Reliable Oil Change Services Near
-                  You
+                Trusted, Fast Oil Changes – Book Your Service Today
                 </h5>
                 <p className="mt-3">
-                  Get In Touch With Us Today To Avail Of Our Service And Learn
-                  More About Exclusive Deals Available.
+                Get Your Car Running Smooth – Claim Your Spot Today
                 </p>
                 <div className="flex gap-2 mt-6"></div>
               </div>

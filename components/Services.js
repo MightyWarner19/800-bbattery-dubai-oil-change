@@ -18,7 +18,7 @@ const Services = () => {
       <div className="pb-12  bg-white-200 ">
         <div
           className="bg-gradient-to-b from-white-300 to-white-500 w-full lg:py-14 py-6"
-          id="testimonial"
+          
         >
           <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
             <div className="flex flex-col w-full mt-16" id="testimoni">

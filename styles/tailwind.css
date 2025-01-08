@@ -19,6 +19,23 @@ p {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   @apply w-0 bg-yellow-500 left-1/2 block bottom-0 absolute;
 }
+.callbtn {
+  padding: 5px 10px;
+}
+.animatedSvg:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  border: 2px solid #f2871c;
+}
+
+.animatedSvg {
+  transition: 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.animatedSvg:hover svg {
+  color: #f2871c;
+}
 .animation-active:after {
   @apply left-0 w-full;
 }
@@ -71,7 +88,16 @@ li.check:before {
  .custom-margin {
   margin-top: -800px;
 }
-
+.timerbox {
+  background-color: #fff;
+}
+.animatedline {
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+  top: 90px !important;
+  left: 50% !important;
+  z-index: 1;
+}
 /* For tablet screens (768px and above) */
 @media (min-width: 768px) {
   .custom-margin {

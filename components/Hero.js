@@ -30,15 +30,16 @@ const Hero = () => {
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 mt-2 lg:mt-0">
             <h1 className="text-3xl lg:text-3xl xl:text-4xl font-medium text-black-600 ">
-            Top-Quality Same-Day Car Oil Change Service at Your Doorstep
+            Same-Day Car Oil Change at Your Doorstep in Dubai
             </h1>
-            <h2 className="text-yellow-500 font-semibold text-xl  uppercase mt-4">
-            Get your car serviced at your location with a complimentary 14-point vehicle check.
-            </h2>
             <div>
-  <p className="text-blue-500 mt-4 mb-6 font-semibold bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text animate-ping animate-text-new highlight-text-more">
+  {/* <p className="text-blue-500 mt-4 mb-6 font-semibold bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text animate-ping animate-text-new highlight-text-more">
   Starting at Only  AED 149
-  </p>
+  </p> */}
+  <div><p class="text-blue-500 mt-4 mb-4 font-semibold inline-block bg-yellow-500/20 p-2 border-2 border-yellow-500 animate-text animate-text-new highlight-text-more">Starting at Only  AED 149</p></div>
+  <h2 className="text-yellow-500 font-semibold text-medium  uppercase mt-4">
+  Get your car serviced at your location with a complimentary 14-point vehicle check.
+  </h2>
  
 </div>
 
@@ -72,13 +73,6 @@ const Hero = () => {
       animation: slideUpFadeInNew 1.5s ease-out;
     }
       .highlight-text-more {
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        background: #f2871c;
-        border-radius:5px;
-        position: relative;
         animation: text 2s 1;
         animation-name: text;
         animation-duration: 2s;

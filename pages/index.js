@@ -19,7 +19,10 @@ import AboutUS from "../components/AboutUS";
 export default function Home() {
   return (
     <>
-      <SeoHead title='24x7 Car Battery Replacement | 800 Bbattery' />
+      <SeoHead
+        title="Best Mobile Car Inspection and Oil Change Services Dubai"
+        description="we specialize in delivering efficient oil change services at home, ensuring a hassle-free experience for our valuable customers."
+      />
       <Layout>
         <Hero />
         <ContactForm />
@@ -27,9 +30,9 @@ export default function Home() {
         <Services />
         <TrustSection />
         <Feature />
-        <WhyChoose />
-        <Feedback />
+        {/* <WhyChoose /> */}
         <StatsCounter />
+        <Feedback />
         <HowItWorks />
         <Faqs />
         <BatterySection />

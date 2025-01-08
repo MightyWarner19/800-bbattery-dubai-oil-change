@@ -40,7 +40,7 @@ const ContactForm = () => {
     if (!formData.email) errors.email = "Email is required.";
     if (!formData.phone) errors.phone = "Phone number is required.";
     if (!formData.services) errors.services = "Service selection is required.";
-    if (!formData.form_message) errors.form_message = "Message is required.";
+    // if (!formData.form_message) errors.form_message = "Message is required.";
 
     return errors;
   };
@@ -112,7 +112,7 @@ const ContactForm = () => {
   return (
     <div
       className="bg-yellow-500 max-w-screen-xl h-80  lg:h-0 px-4 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center"
-      id="contact"
+      id=""
     >
       <ScrollAnimationWrapper className="relative w-full mt-6">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>

@@ -4,7 +4,7 @@ import WhatsappButton from "../misc/WhatsappButton";
 
 export default function HowItWorks() {
   return (
-    <div className="bg-yellow-200">
+    <div className="bg-yellow-200 HowItWorks">
       <div className="w-full mx-auto px-4 py-12 max-w-7xl">
         <div className="container mx-auto text-center px-4 pt-10">
         {/* Section Title */}
@@ -35,7 +35,7 @@ export default function HowItWorks() {
           {/* Step 1 */}
           <div className="flex flex-col items-center text-center space-y-4 border-0  shadow-yellow-md- border-gray-500 hover:border-yellow-500 rounded-lg p-8 transition-all relative">
             {/* Animated Flow Line */}
-            <div className="absolute lg:-top-10 -top-8  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
+            <div className="absolute lg:-top-10 -top-8 animatedline  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
               <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
@@ -54,7 +54,7 @@ export default function HowItWorks() {
               </div>
 
             {/* Icon and Content */}
-            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10">
+            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10 animatedSvg">
               <Phone className="w-8 h-8 text-white-500" />
             </div>
             <h3 className="text-xl font-semibold">Book Your Appointment</h3>
@@ -64,7 +64,7 @@ export default function HowItWorks() {
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center space-y-4 border-0  shadow-yellow-md- border-gray-500 hover:border-yellow-500 rounded-lg p-8 transition-all relative">
             {/* Animated Flow Line */}
-            <div className="absolute lg:-top-10 -top-8  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
+            <div className="absolute lg:-top-10 -top-8 animatedline  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
               <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
@@ -83,7 +83,7 @@ export default function HowItWorks() {
               </div>
 
             {/* Icon and Content */}
-            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10">
+            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10 animatedSvg">
               <Repeat1 className="w-8 h-8 text-white-500" />
             </div>
             <h3 className="text-xl font-semibold">Choose Your Brand & Location </h3>
@@ -95,7 +95,7 @@ export default function HowItWorks() {
           {/* Step 3 */}
           <div className="flex flex-col items-center text-center space-y-4  rounded-lg p-8 transition-all relative">
            {/* Animated Flow Line */}
-           <div className="absolute lg:-top-10 -top-8  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
+           <div className="absolute lg:-top-10 -top-8 animatedline  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
               <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
@@ -113,7 +113,7 @@ export default function HowItWorks() {
               </svg>
               </div>
             {/* Icon and Content */}
-            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10">
+            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10 animatedSvg">
               <Wrench className="w-8 h-8 text-white-500" />
             </div>
             <h3 className="text-xl font-semibold">Expert Onsite<br></br> Service</h3>
@@ -125,7 +125,7 @@ export default function HowItWorks() {
           {/* Step 4 */}
           <div className="flex flex-col items-center text-center space-y-4  rounded-lg p-8 transition-all relative">
             {/* Animated Flow Line */}
-            <div className="absolute lg:-top-10 -top-8  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
+            <div className="absolute lg:-top-10 -top-8 animatedline  right-0 left-0 bottom-0  w-full h-full pointer-events-none">
               <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
@@ -160,7 +160,7 @@ export default function HowItWorks() {
             </div>
 
             {/* Icon and Content */}
-            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10">
+            <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center z-10 animatedSvg">
               <CreditCard className="w-8 h-8 text-white-500" />
             </div>
             <h3 className="text-xl font-semibold">Pay<br></br> Conveniently</h3>
@@ -171,8 +171,8 @@ export default function HowItWorks() {
         </div>
         <div className="flex justify-center items-center gap-2">
               
-        <CallButton name="Call Now!"/>
-        <WhatsappButton name="WhatsApp!"/>
+        <CallButton name="Book Your Same-Day Service"/>
+        <WhatsappButton name="Choose Your Preferred Oil!"/>
             </div>
         
       </div>
