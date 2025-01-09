@@ -20,7 +20,7 @@ p {
   @apply w-0 bg-yellow-500 left-1/2 block bottom-0 absolute;
 }
 .callbtn {
-  padding: 5px 10px;
+  padding: 10px 25px;
 }
 .animatedSvg:hover {
   transform: scale(1.2);
@@ -99,6 +99,12 @@ li.check:before {
   z-index: 1;
 }
 /* For tablet screens (768px and above) */
+@media (max-width: 768px) {
+  .statsfont {
+    font-size: 18px !important; /* Custom margin for tablets */
+  }
+}
+
 @media (min-width: 768px) {
   .custom-margin {
     margin-top: -600px; /* Custom margin for tablets */

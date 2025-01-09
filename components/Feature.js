@@ -26,8 +26,8 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/872c2627-9ab6-4c31-d8e2-66a87d6f0700/1"
-              alt="automotive battery servicing"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/9dc105cb-8e67-4ef1-21b9-786fd9452b00/1"
+              alt="Affordable Premium Oil Change"
               layout="responsive"
               quality={100}
               height={414}

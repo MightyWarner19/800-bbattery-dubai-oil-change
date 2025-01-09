@@ -56,6 +56,15 @@ export default function StatsCounter() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16  grid lg:grid-cols-1 grid-cols-1 gap-8 items-center">
           <div className="space-y-8">
             <div>
+            <div className="flex flex-col items-center text-center">
+                <div className="flex items-center mb-4">
+                  <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
+                  <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
+                    Unbeatable Deals with Every Oil Change
+                  </h2>
+                  <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
+                </div>
+              </div>
               <div class="text-center mb-12">
                 <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
                   Limited-Time Offer
@@ -88,18 +97,15 @@ export default function StatsCounter() {
               </div>
             </div>
           </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="flex items-center mb-4">
-                  <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
-                  <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
-                    Unbeatable Deals with Every Oil Change
-                  </h2>
-                  <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
-                </div>
-                <h3 className="text-black-900 font-semibold text-3xl mb-4">
-                  Get Affordable Premium Oil Change Service at Your Doorstep <br></br>
-                  Exclusive Perks Await!
-                </h3>
+              <div className="flex flex-col items-start text-left">
+              <h4 className="text-black-900 statsfont font-semibold text-2xl mb-4">
+                1. Exclusive Discount: Enjoy 20% off on car tinting, wrapping, or cleaning when you avail of our oil change service.
+                </h4>
+              <h4 className="text-black-900 statsfont font-semibold text-2xl mb-4">
+                2. Get Affordable Premium Oil Change Service at Your Doorstep
+                Exclusive Free 14 Perks Await!
+                </h4>
+                
               </div>
             </div>
 
