@@ -71,7 +71,7 @@ const Services = () => {
                 href="https://www.800bbattery.com/service/onsite-mobile-car-service"
                 className="text-purple-600 hover:text-yellow-500 flex flex-row underline underline-offset-4 "
               >
-                Read More &nbsp;
+                view Detail &nbsp;
                 <MoveRight className="text-yellow-500" />
               </a>
             </div>
@@ -100,7 +100,7 @@ const Services = () => {
                 href="https://www.800bbattery.com/service/onsite-mobile-car-service"
                 className="text-purple-600 hover:text-yellow-500 flex flex-row underline underline-offset-4 "
               >
-                Read More &nbsp;
+                View Detail &nbsp;
                 <MoveRight className="text-yellow-500" />
               </a>
             </div>
