@@ -251,7 +251,7 @@ const Header = () => {
           </a>{" "}
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/+971549917109?text=Can I get more details about your service?"
+            href="https://wa.me/+971549917109?text=*Need onsite car mobile service at home or work? Sameday service available!!*%0A%0A1) Car Oil Change%0A2) Onsite Mobile Car Inspection%0A3) Others (please mention)%0A%0A*Chat with Us on WhatsApp Today!*"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center justify-center bg-green-600 text-white   hover:shadow-lg  p-4 border-white-500/50 border"

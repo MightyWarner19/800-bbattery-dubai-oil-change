@@ -7,7 +7,7 @@ const FixedContactButton = () => {
     <div className="fixed lg:bottom-8 bottom-20 right-4 lg:flex flex-col gap-3 z-50 hidden">
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/+971549917109?text=Can I get more details about your service?"
+        href="https://wa.me/+971549917109?text=*Need onsite car mobile service at home or work? Sameday service available!!*%0A%0A1) Car Oil Change%0A2) Onsite Mobile Car Inspection%0A3) Others (please mention)%0A%0A*Chat with Us on WhatsApp Today!*"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center justify-center bg-green-600 text-white rounded-full shadow-md hover:shadow-lg transition-all transform hover:scale-110 p-4 border-white-500/50 border"
