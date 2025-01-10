@@ -20,7 +20,6 @@ class MyDocument extends Document {
             <link rel="icon" type="image/png" sizes="16x16" href="https://www.800bbattery.com/assets/images/favicons/favicon-16x16.png"/>
             <link rel="manifest" href="https://www.800bbattery.com/assets/images/favicons/site.webmanifest"/>
             <link rel="shortcut icon" href="https://www.800bbattery.com/assets/images/favicons/favicon.ico"/>
-            <link rel="preload" href="https://www.800bbattery.com/path-to-critical-font.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
